@@ -135,6 +135,16 @@ db.<collection-name>.getIndexes()
 db.<collection-name>.dropIndexes()
 ```
 
+### Replication
+Replication is the process of synchronizing data across multiple servers. Replication provides redundancy and increases data availability with multiple copies of data on different database servers.
+#### Set Up a Replica Set
+```
+mongod --port "PORT" --dbpath "YOUR_DB_DATA_PATH" --replSet "REPLICA_SET_INSTANCE_NAME"
+```
+#### Add Members to Replica Set
+```
+>rs.add(HOST_NAME:PORT)
+
 ### Sharding
 Sharding is the process of storing data records across multiple machines and it is MongoDB's approach to meeting the demands of data growth.
 
