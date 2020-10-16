@@ -134,3 +134,17 @@ db.<collection-name>.getIndexes()
 ```
 db.<collection-name>.dropIndexes()
 ```
+
+### Sharding
+Sharding is the process of storing data records across multiple machines and it is MongoDB's approach to meeting the demands of data growth.
+
+### Create Backup
+#### Dump MongoDB Data
+```
+>mongodump
+```
+
+#### Restore data
+```
+>mongorestore
+```
