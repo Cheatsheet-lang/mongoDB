@@ -158,3 +158,29 @@ Sharding is the process of storing data records across multiple machines and it 
 ```
 >mongorestore
 ```
+### Deployment
+#### When you are preparing a MongoDB deployment, you should try to understand how your application is going to hold up in production.
+
+```
+mongostat
+```
+#### This command checks the status of all running mongod instances and return counters of database operations.
+
+#### To run the command, start your mongod instance. In another command prompt, go to bin directory of your mongodb installation and type mongostat.
+```
+D:\set up\mongodb\bin>mongostat
+```
+
+```
+mongotop
+```
+#### This command tracks and reports the read and write activity of MongoDB instance on a collection basis. By default, mongotop returns information in each second, which you can change it accordingly.
+#### To run the command, start your mongod instance. In another command prompt, go to bin directory of your mongodb installation and type mongotop.
+```
+D:\set up\mongodb\bin>mongotop
+```
+#### To change mongotop command to return information less frequently, specify a specific number after the mongotop command.
+```
+D:\set up\mongodb\bin>mongotop 30
+```
+#### The above example will return values every 30 seconds.
