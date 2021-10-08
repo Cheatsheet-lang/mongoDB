@@ -180,7 +180,18 @@ mongotop
 D:\set up\mongodb\bin>mongotop
 ```
 #### To change mongotop command to return information less frequently, specify a specific number after the mongotop command.
-```
+```mongo
 D:\set up\mongodb\bin>mongotop 30
 ```
 #### The above example will return values every 30 seconds.
+
+### Running the commands
+To run a command against the current database, use
+```mongo
+db.runCommand( { <command> } )
+```
+
+To run an administrative command against the admin database, use
+```mongo
+db.adminCommand( { <command> } )
+```
